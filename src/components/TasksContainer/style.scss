@@ -1,0 +1,197 @@
+.tasks__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .empty-tasks {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  table {
+    border-collapse: separate;
+    border-radius: $borderRadius;
+    border-spacing: 0;
+    margin-bottom: 1rem;
+
+    th, td {
+      border-width: $tableBorderWidth;
+      border-bottom-style: solid;
+      padding: $tableSpacing;
+    }
+
+    th:not(:last-child) {
+      border-right-style: solid;
+    }
+
+    thead {
+      tr {
+        background-color: $tableHeaderColor;
+        th {
+          padding: 0;
+          vertical-align: middle;
+          text-align: center;
+          border-color: $tableHeaderBordersColor;
+
+          &.id {
+            width: 5%;
+          }
+          &.name {
+            width: 15%;
+          }
+          &.email {
+            width: 25%;
+          }
+          &.task {
+            width: 41%;
+          }
+          &.done {
+            width: 7%;
+          }
+          &.actions {
+            width: 7%;
+          }
+
+          .title {
+            display: flex;
+            text-wrap: nowrap;
+
+            .title__button {
+              align-items: center;
+              color: $whiteColor;
+              font-weight: bold;
+              font-size: 1rem;
+              border: none;
+              width: 100%;
+              background-color: inherit;
+              padding: $tableSpacing;
+
+              &:focus {
+                border: none;
+                outline: none;
+              }
+
+              span {
+                vertical-align: middle;
+              }
+
+              .order-direction {
+                margin-left: 0.5rem;
+              }
+
+              &.sort__active {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td:not(:first-child) {
+          background-color: $tableBodyBackgroundColor;
+          border-color: $tableBodyBordersColor;
+          color: $tableBodyColor;
+        }
+        td:first-child {
+          font-weight: bold;
+          background-color: $tableAsideBackgroundColor;
+          color: $whiteColor;
+          border-color: $tableAsideBordersColor;
+        }
+        td:not(:last-child) {
+          border-width: $tableBorderWidth;
+          border-right-style: solid;
+        }
+        &:last-child {
+          td:first-child {
+            border-right-width: $tableBorderWidth;
+            border-right-style: solid;
+            border-bottom-width: $tableBorderWidth;
+          }
+          td:last-child {
+            border-width: $tableBorderWidth;
+          }
+        }
+
+        td {
+          overflow-wrap: anywhere;
+        }
+
+        td:last-child {
+          vertical-align: middle;
+        }
+
+        td.task {
+          position: relative;
+          .field {
+            font-size: 1rem;
+            position: relative;
+
+            label {
+              position: relative;
+            }
+
+            .edit__box {
+              position: absolute;
+              top: 50%;
+              right: 0;
+              transform: translateY(-50%);
+            }
+
+            .static {
+              display: block;
+              padding: $fieldEditSpacing;
+            }
+            .editable {
+              font-size: 1rem;
+              color: red;
+              border-width: 0;
+              width: 100%;
+              outline: 2px solid $inputBorderColor;
+              padding: $fieldEditSpacing;
+            }
+            .edited-task {
+              position: absolute;
+              left: 10px;
+              top: -0.7rem;
+              font-size: 0.5rem;
+              color: $primaryColor;
+            }
+          }
+        }
+      }
+
+      .task-status__wrapper {
+        .status-icon-button {
+          padding: 0;
+          width: 1.2rem;
+          height: 1.2rem;
+          border: none;
+          &:not(:disabled) {
+            cursor: pointer;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      td.center {
+        text-align: center;
+      }
+
+      .user-email {
+        overflow-wrap: anywhere;
+      }
+
+    }
+  }
+}
+
+
+

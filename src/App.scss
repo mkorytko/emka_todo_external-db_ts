@@ -1,0 +1,27 @@
+.App-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    position: relative;
+    height: 5rem;
+    padding: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .main {
+    width: 85vmax;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0.66rem;
+  }
+}
+
+

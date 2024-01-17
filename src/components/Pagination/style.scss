@@ -1,0 +1,91 @@
+.Pagination__wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+ul.rc-pagination {
+  font-size: 0.75rem;
+}
+
+.rc-pagination-prev .rc-pagination-item-link, .rc-pagination-next .rc-pagination-item-link {
+  font-size: 1rem;
+}
+
+.rc-pagination-prev, .rc-pagination-next, .rc-pagination-jump-prev, .rc-pagination-jump-next {
+  min-width: 2rem;
+  height: 2rem;
+  line-height: 1.5rem;
+}
+
+.rc-pagination-item:focus,
+.rc-pagination-item {
+  min-width: 2rem;
+  height: 2rem;
+  border-width: 2px;
+  border-color: $lighterSecondaryColor;
+  border-radius: $borderRadius;
+}
+
+.rc-pagination-item a,
+.rc-pagination-item:focus,
+.rc-pagination-item:focus a {
+  border-color: $lighterSecondaryColor;
+  color: lighten($primaryColor, 15%);
+}
+
+.rc-pagination-item,
+.rc-pagination-item a {
+  line-height: 2rem;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  transform: scale(1);
+  transition: border-color, color, font-size, transform $highTransition ease;
+}
+
+.rc-pagination-next .rc-pagination-item-link,
+.rc-pagination-prev .rc-pagination-item-link {
+  border-width: 2px;
+  border-radius: $borderRadius;
+  font-size: 1.2rem;
+}
+
+.rc-pagination-item:hover,
+.rc-pagination-item-active:hover button,
+.rc-pagination-item-active,
+.rc-pagination-item-active:focus,
+.rc-pagination-item-active:hover {
+  border-color: $secondaryColor;
+}
+
+.rc-pagination-item:hover a,
+.rc-pagination-item a:hover,
+.rc-pagination-item-active a,
+.rc-pagination-item-active:focus a,
+.rc-pagination-item-active a:hover {
+  color: $primaryColor;
+}
+
+.rc-pagination-item-active a {
+  transform: scale(1.4);
+}
+
+.rc-pagination-prev button,
+.rc-pagination-next button {
+  color: $primaryColor;
+}
+
+.rc-pagination-prev:hover .rc-pagination-item-link:not(:disabled),
+.rc-pagination-next:hover .rc-pagination-item-link:not(:disabled) {
+  color: $darkerPrimaryColor;
+  border-color: $inputBorderColor;
+}
+
+.rc-pagination-prev:hover .rc-pagination-item-link:hover:not(:disabled),
+.rc-pagination-next:hover .rc-pagination-item-link:hover:not(:disabled) {
+  border-color: $primaryColor;
+}
+
+.rc-pagination-jump-prev button, .rc-pagination-jump-next button {
+  line-height: 2rem;
+  color: $secondaryColor;
+}

@@ -1,0 +1,8 @@
+.idea/
+.temp_cache/
+node_modules/
+migrations/
+seeds/
+dist
+
+.editorconfig

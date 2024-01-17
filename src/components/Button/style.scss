@@ -1,0 +1,24 @@
+.custom-button {
+  cursor: pointer;
+  padding: $buttonSpacing;
+  border-radius: $borderRadius;
+  background-color: $secondaryColor;
+  color: $whiteColor;
+  overflow:hidden;
+  transition: all $highTransition ease;
+
+  &:hover {
+    background-color: darken($secondaryColor, 10%);
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: lighten($secondaryColor, 10%);
+    color: lighten($greyColor, 13%);
+  }
+
+  &:focus-visible {
+    outline-color: $primaryColor;
+  }
+}
+

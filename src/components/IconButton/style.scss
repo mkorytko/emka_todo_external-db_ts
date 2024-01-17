@@ -1,0 +1,25 @@
+.icon-button {
+  cursor: pointer;
+  display: inline-block;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  transition: border-color $highTransition ease;
+  color: inherit;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &:not(.no-hover):hover,
+  &:not(:disabled):hover {
+    border-bottom-color: $primaryColor;
+  }
+
+  @each $name, $size in $iconButtonSizes {
+    &.#{$name} img {
+      height: $size;
+      width: $size;
+    }
+  }
+}

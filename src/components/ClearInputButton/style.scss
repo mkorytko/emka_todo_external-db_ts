@@ -1,0 +1,21 @@
+.clear-button {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: $greyColor;
+  background: none;
+  transition: color $highTransition ease;
+
+  &:hover {
+    color: $blackColor;
+  }
+
+  &.top {
+    top: 0;
+    transform: translateY(0);
+  }
+}

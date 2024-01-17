@@ -1,0 +1,41 @@
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$greyColor: #918f8f;
+$redColor: #ee5151;
+$lighterPrimaryColor: #b486d5;
+$primaryColor: #a661d0;
+$darkerPrimaryColor: #7a25b7;
+$lighterSecondaryColor: #fcdcca;
+$secondaryColor: #ffb68e;
+$textPrimary: #27005D;
+
+$tableHeaderColor: #a661d0;
+$tableHeaderBordersColor: $whiteColor;
+$tableAsideBordersColor: $whiteColor;
+$tableAsideBackgroundColor: $secondaryColor;
+$tableAsideBordersColor: $whiteColor;
+$tableBodyBackgroundColor: #fff6f6;
+$tableBodyBordersColor: #f2e6ff;
+$tableBodyColor: #767985;
+$tableSpacing: 0.65rem 0.4rem;
+$tableBorderWidth: 2px;
+
+$toastyErrorColor: #ffffff;
+$toastyErrorBgColor: #ff9e9e;
+$toastySuccessColor: #ffffff;
+$toastySuccessBgColor: #4fdc7f;
+$toastyInfoBgColor: #70adf6;
+
+$slowTransition: 600ms;
+$middleTransition: 400ms;
+$highTransition: 200ms;
+
+$inputBorderColor: #DDD7F3;
+$inputBorderWidth: 0.125rem;
+$inputRightPadding: 1.5rem;
+
+$iconButtonSizes: (sm: 1rem, md: 1.25rem, lg: 1.5rem);
+$borderRadius: 0.3rem;
+$fieldSpacing: 0.4rem $inputRightPadding 0.4rem 0.33rem;
+$fieldEditSpacing: 0.4rem 3.5rem 0.4rem 0.33rem;
+$buttonSpacing: 0.5rem 0.85rem;

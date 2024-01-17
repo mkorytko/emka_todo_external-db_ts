@@ -1,0 +1,19 @@
+.loader-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .progress {
+    width: 100%;
+    height: 5px;
+    background: repeating-linear-gradient(135deg, #a661d0 -3px, #a661d0 11px, #ffb68e 21px, #ffb68e 45px) 0 0;
+    animation: background 0.8s infinite linear;
+  }
+}
+
+@keyframes background {
+  100% {
+    background-position: 335px 0;
+  }
+}

@@ -1,0 +1,45 @@
+.modal-container {
+  position: absolute;
+  padding: 12px;
+  right: 0;
+  top: -175px;
+  width: 250px;
+  z-index: 1;
+  background-color: $whiteColor;
+  transition: All $middleTransition;
+  border-radius: $borderRadius;
+  box-shadow: 2px 3px 13px 1px rgba(34, 60, 80, 0.25);
+  transition-timing-function: cubic-bezier(0.55,-0.51,.41,1.26);
+
+  div {
+    position: relative;
+  }
+
+  &.active {
+    top: 0;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  label {
+    display: block;
+    margin: 0 0 10px 0;
+
+    .form-input {
+      width: 100%;
+      transition: border-color 250ms;
+
+      &.error {
+        border-color: $redColor;
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 15px;
+  }
+}
+
